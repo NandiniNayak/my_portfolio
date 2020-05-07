@@ -1,3 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+/* step1: */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Libre Baskerville', serif;
+}
+#profile h1{
+    margin: 20px;
+    text-align: center;
+}
+#profile img{
+    width: 60%;
+    height: 60%;
+    margin: 0 20%;
+}
+#profile p{
+    margin: 20px;
+    color:#777777;
+    font-size: 14px;
+    line-height:1.75;
+    text-align: justify;
+}
 #profile, #skills{
     background-color: white;
 }
