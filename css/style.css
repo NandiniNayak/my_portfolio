@@ -20,7 +20,7 @@ body{
 }
 #profile img{
     width: 60%;
-    height: 60%;
+    min-height: 250px;
     margin: 0 20%;
 }
 #profile p{
@@ -32,12 +32,33 @@ body{
 }
 #profile, #skills{
     background-color: white;
+    min-height: 600px;
 }
 #projects, #contact{
     background-color: #eeeeee;
+    min-height: 1020px;
 }
 
+/* step2: style projects */
+#projects h2{
+    margin: 20px;
+    text-align:center;
+}
+#projects a{
+    /* padding: 300px; */
+    position: relative;
+    bottom:10px;
+    padding: 33%;
+}
 
+.project{
+    background-color: white;
+    margin:10px 10px;
+    min-height: 250px;
+}
+.project img{
+    width: 100%;
+}
 /* For mobile phones: */
 [class*="col-"] {
   width: 100%;
@@ -57,8 +78,15 @@ body{
   .col-s-10 {width: 83.33%;}
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
+  #profile, #skills{min-height: 400px;}
+  #profile p{font-size: 1.7em;}
+  #profile h1{font-size: 3.5em;}
+  #projects h1{text-align: center; font-size:3em; margin: 20px;}
+  #projects {min-height: 1750px;}
+  .project h2, a{font-size: 2.3em;}
+
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   /* For desktop: */
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
