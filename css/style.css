@@ -8,6 +8,12 @@
 body{
     font-family: 'Libre Baskerville', serif;
 }
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 #profile h1{
     margin: 20px;
     text-align: center;
