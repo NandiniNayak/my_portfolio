@@ -11,7 +11,6 @@ body{
 .row{
     display: flex;
     justify-content: space-around;
-    /* justify-content: flex-start; */
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -73,15 +72,12 @@ body{
 /* step3: Style skills */
 
 .skill {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap; */
     margin: 10px;
     width: 33%;
 }
 .skill img{
-    width: 100%;
+    width: 80%;
+    height: 80%;
     margin: 8px 0;
     border:1px solid grey;
 }
@@ -126,9 +122,8 @@ footer i{
   #projects h1{text-align: center; font-size:2.7em; padding-top: 30px;}
   #projects {min-height: 1900px;}
   .project h2, a{font-size: 2.3em;}
-  .skill img{width:80%; height:80%;}
+  .skill img{width:90%; height:90%;}
   footer i{font-size: 3em;}
-  /* .row{justify-content:space-around;} */
 
 }
 
