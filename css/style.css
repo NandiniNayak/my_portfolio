@@ -10,7 +10,7 @@ body{
 }
 .row{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -94,6 +94,10 @@ footer{
 footer i{
     padding: 20px;
 }
+  /* find an alternative to solve this */
+#skills [class*="col-"] {
+  width: 33%;
+}
 
 /* Media Queries */
 /* For mobile phones: */
@@ -124,6 +128,10 @@ footer i{
   .project h2, a{font-size: 2.3em;}
   .skill img{width:90%; height:90%;}
   footer i{font-size: 3em;}
+    /* find an alternative to solve this */
+  #skills [class*="col-"] {
+  width: 25%;
+}
 
 }
 
@@ -149,4 +157,8 @@ footer i{
   #projects{min-height: 600px;}
   .skill img{width:80%; height:80%;}
   .container {margin: 0px 150px;}
+  /* find an alternative to solve this */
+  #skills [class*="col-"] {
+    width: 16.66%;
+  }
 }
