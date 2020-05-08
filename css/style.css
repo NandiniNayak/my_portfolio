@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
-@import "font-awesome-sprockets";
-@import "font-awesome";
 /* step1: */
 * {
     margin:0;
@@ -13,6 +11,7 @@ body{
 .row{
     display: flex;
     justify-content: space-around;
+    /* justify-content: flex-start; */
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -45,7 +44,7 @@ body{
     background-color: white;
     min-height: 600px;
 }
-#projects, #contact{
+#projects{
     background-color: #eeeeee;
     min-height: 1020px;
 }
@@ -74,18 +73,31 @@ body{
 /* step3: Style skills */
 
 .skill {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     margin: 10px;
+    width: 33%;
 }
 .skill img{
-    width: 48%;
+    width: 100%;
     margin: 8px 0;
     border:1px solid grey;
 }
 
+/* style contact */
+footer{
+    background-color: #eeeeee;
+    min-height: 50px;
+    margin-top:30px;
+    display:flex;
+    justify-content: center;
+}
+
+footer i{
+    padding: 20px;
+}
 
 /* Media Queries */
 /* For mobile phones: */
@@ -108,14 +120,18 @@ body{
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
   #profile, #skills{min-height: 400px;}
+  .name{width:400px;}
   #profile p{font-size: 1.7em;}
-  #profile h1{font-size: 3.5em;}
+  #profile h1{font-size: 3em;}
   #projects h1{text-align: center; font-size:2.7em; padding-top: 30px;}
   #projects {min-height: 1900px;}
   .project h2, a{font-size: 2.3em;}
-  .skill img{width: 33%;}
+  .skill img{width:80%; height:80%;}
+  footer i{font-size: 3em;}
+  /* .row{justify-content:space-around;} */
 
 }
+
 @media only screen and (min-width: 769px) {
   /* For desktop: */
   .col-1 {width: 8.33%;}
@@ -130,4 +146,12 @@ body{
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+  .name{width:30%;}
+  #profile img{margin:0;}
+  #profile p{font-size: 1.2em;}
+  .project img{min-height: 300px; }
+  .project h2, a{font-size: 1.5em;}
+  #projects{min-height: 600px;}
+  .skill img{width:80%; height:80%;}
+  .container {margin: 0px 150px;}
 }
