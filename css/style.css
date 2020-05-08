@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import "font-awesome-sprockets";
+@import "font-awesome";
 /* step1: */
 * {
     margin:0;
@@ -14,10 +16,19 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
 }
-#profile h1{
-    margin: 20px;
+.title{
+    padding: 10px;
     text-align: center;
 }
+.name{
+  border: 5px solid transparent;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
+  margin: 20px auto;
+  width: 300px;
+  /* animation: animatedgradient 3s ease infinite; */
+}
+
 #profile img{
     width: 60%;
     min-height: 250px;
@@ -59,6 +70,24 @@ body{
 .project img{
     width: 100%;
 }
+
+/* step3: Style skills */
+
+.skill {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.skill img{
+    width: 48%;
+    margin: 8px 0;
+    border:1px solid grey;
+}
+
+
+/* Media Queries */
 /* For mobile phones: */
 [class*="col-"] {
   width: 100%;
@@ -81,9 +110,10 @@ body{
   #profile, #skills{min-height: 400px;}
   #profile p{font-size: 1.7em;}
   #profile h1{font-size: 3.5em;}
-  #projects h1{text-align: center; font-size:3em; margin: 20px;}
+  #projects h1{text-align: center; font-size:2.7em; padding-top: 30px;}
   #projects {min-height: 1900px;}
   .project h2, a{font-size: 2.3em;}
+  .skill img{width: 33%;}
 
 }
 @media only screen and (min-width: 769px) {
