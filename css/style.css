@@ -24,7 +24,15 @@ body{
   border-image-slice: 1;
   margin: 20px auto;
   width: 300px;
-  /* animation: animatedgradient 3s ease infinite; */
+  animation: animatedgradient 0.5s ease infinite;
+}
+@keyframes animatedgradient{
+  0%{
+    border-image-slice: 10;
+  }
+  25%{border-image-slice: 20;}
+  50%{border-image-slice: 30;}
+  100%{border-image-slice: 40;}
 }
 /* px - absolute  */
 /* % - relative */
