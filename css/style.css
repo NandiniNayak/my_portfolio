@@ -26,11 +26,12 @@ body{
   width: 300px;
   /* animation: animatedgradient 3s ease infinite; */
 }
-
+/* px - absolute  */
+/* % - relative */
 #profile img{
-    width: 60%;
+    width: 70%;
     min-height: 250px;
-    margin: 0 20%;
+    margin: 0 15%;
 }
 #profile p{
     margin: 20px;
@@ -43,12 +44,14 @@ body{
     background-color: white;
     min-height: 600px;
 }
+
+
+
+/* step2: style projects */
 #projects{
     background-color: #eeeeee;
     min-height: 1020px;
 }
-
-/* step2: style projects */
 #projects h2{
     margin: 20px;
     text-align:center;
