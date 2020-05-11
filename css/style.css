@@ -24,7 +24,7 @@ body{
   border-image-slice: 1;
   margin: 20px auto;
   width: 300px;
-  animation: animatedgradient 0.5s ease infinite;
+  /* animation: animatedgradient 0.5s ease infinite; */
 }
 @keyframes animatedgradient{
   0%{border-image-slice: 10;}
@@ -35,9 +35,9 @@ body{
 /* px - absolute  */
 /* % - relative */
 #profile img{
-    width: 70%;
-    min-height: 250px;
-    margin: 0 15%;
+    width: 50%;
+    /* min-height: 250px; */
+    margin: 0 25%;
 }
 #profile p{
     margin: 20px;
@@ -132,6 +132,7 @@ footer i{
   .name{width:400px;}
   #profile p{font-size: 1.7em;}
   #profile h1{font-size: 3em;}
+  #profile img{width: 60%; margin:0 20%;}
   #projects h1{text-align: center; font-size:2.7em; padding-top: 30px;}
   #projects {min-height: 1900px;}
   .project h2, a{font-size: 2.3em;}
@@ -159,7 +160,7 @@ footer i{
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
   .name{width:30%;}
-  #profile img{margin:0;}
+  #profile img{width:70%; margin:0 15%;}
   #profile p{font-size: 1.2em;}
   .project img{min-height: 300px; }
   .project h2, a{font-size: 1.5em;}
