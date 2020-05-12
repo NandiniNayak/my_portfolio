@@ -1,11 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+/* step1: */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Libre Baskerville', serif;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.title{
+    padding: 10px;
+    text-align: center;
+}
+.name{
+  border: 5px solid transparent;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
+  margin: 20px auto;
+  width: 300px;
+  /* animation: animatedgradient 0.5s ease infinite; */
+}
+@keyframes animatedgradient{
+  0%{border-image-slice: 10;}
+  25%{border-image-slice: 20;}
+  50%{border-image-slice: 30;}
+  100%{border-image-slice: 40;}
+}
+/* px - absolute  */
+/* % - relative */
+#profile img{
+    width: 50%;
+    /* min-height: 250px; */
+    margin: 0 25%;
+}
+#profile p{
+    margin: 20px;
+    color:black;
+    font-size: 14px;
+    line-height:1.75;
+    text-align: justify;
+}
 #profile, #skills{
     background-color: white;
+    min-height: 600px;
 }
-#projects, #contact{
+
+
+
+/* step2: style projects */
+#projects{
     background-color: #eeeeee;
+    min-height: 1020px;
+}
+#projects h2{
+    margin: 20px;
+    text-align:center;
+}
+#projects a{
+    /* padding: 300px; */
+    position: relative;
+    bottom:10px;
+    padding: 33%;
 }
 
+.project{
+    background-color: white;
+    margin:10px 10px;
+    min-height: 250px;
+}
+.project img{
+    width: 100%;
+}
 
+/* step3: Style skills */
+
+.skill {
+    margin: 10px;
+    width: 33%;
+}
+.skill img{
+    width: 80%;
+    height: 80%;
+    margin: 8px 0;
+    border:1px solid grey;
+}
+
+/* style contact */
+footer{
+    background-color: #eeeeee;
+    min-height: 50px;
+    margin-top:30px;
+    display:flex;
+    justify-content: center;
+}
+
+footer i{
+    padding: 20px;
+}
+  /* find an alternative to solve this */
+#skills [class*="col-"] {
+  width: 33%;
+}
+
+/* Media Queries */
 /* For mobile phones: */
 [class*="col-"] {
   width: 100%;
@@ -25,8 +128,24 @@
   .col-s-10 {width: 83.33%;}
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
+  #profile, #skills{min-height: 400px;}
+  .name{width:400px;}
+  #profile p{font-size: 1.7em;}
+  #profile h1{font-size: 3em;}
+  #profile img{width: 60%; margin:0 20%;}
+  #projects h1{text-align: center; font-size:2.7em; padding-top: 30px;}
+  #projects {min-height: 1900px;}
+  .project h2, a{font-size: 2.3em;}
+  .skill img{width:90%; height:90%;}
+  footer i{font-size: 3em;}
+    /* find an alternative to solve this */
+  #skills [class*="col-"] {
+  width: 25%;
 }
-@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 769px) {
   /* For desktop: */
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
@@ -40,4 +159,16 @@
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+  .name{width:30%;}
+  #profile img{width:70%; margin:0 15%;}
+  #profile p{font-size: 1.2em;}
+  .project img{min-height: 300px; }
+  .project h2, a{font-size: 1.5em;}
+  #projects{min-height: 600px;}
+  .skill img{width:80%; height:80%;}
+  .container {margin: 0px 150px;}
+  /* find an alternative to solve this */
+  #skills [class*="col-"] {
+    width: 16.66%;
+  }
 }
